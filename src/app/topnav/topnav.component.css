@@ -1,0 +1,15 @@
+.topnavmain{
+  display:grid;
+  width: 100%;
+  grid-template-columns: 55% 45%;
+}
+.topnavsecond{
+    display: grid;
+    grid-template-columns: 16.666% 16.666% 16.666%  16.666% 16.666% 16.666%;
+    font: sans-serif;
+    text-transform: uppercase;
+    opacity: 0.9;
+    font-size: 16px;
+    font-weight: bold;
+
+}

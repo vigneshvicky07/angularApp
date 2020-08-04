@@ -1,0 +1,39 @@
+<p>weather works!</p>
+<div>
+  <form #userform= ngForm>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name"
+        required
+        #value="ngModel"
+        name="username"
+        [(ngModel)]="uservalues.value"
+        style="width:50%;border-top: none;border-left: none;border-right: none;"
+      />
+    </div>
+
+
+
+  </form>
+
+
+
+
+
+  <input type = "text" [ngModel] = "groupref.value" #groupref value={{groupref.value}}/>
+  <div>
+    <div class="text-center">
+      <button type="submit"  (click)="getvalue(groupref.value)" class="btn btn-success btn-md">
+        Search for the weather
+      </button>
+
+
+{{hai}}
+    </div>
+
+
+
+  </div>
+    </div>

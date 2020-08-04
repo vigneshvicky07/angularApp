@@ -1,0 +1,63 @@
+<div class="container-fluid">
+  <form #userform="ngForm">
+    <div class="formtop" style="display: flex;">
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Name"
+          required
+          #username="ngModel"
+          name="username"
+          [(ngModel)]="userModel.username"
+          style="width:50%;border-top: none;border-left: none;border-right: none;"
+          [class.is-invalid]="username.invalid && username.touched"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="tel"
+          required
+          #mobilenumber="ngModel"
+          pattern="^\d{10}$"
+          class="form-control"
+          placeholder="mobile"
+          name="mobilenumber"
+          [(ngModel)]="userModel.mobilenumber"
+          style="width:50%;border-top: none;border-left: none;border-right: none;"
+          [class.is-invalid]="mobilenumber.invalid && mobilenumber.touched"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control"
+        required
+        #email="ngModel"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        placeholder="email"
+        name="email"
+        [(ngModel)]="userModel.email"
+        style="border-top: none;border-left: none;border-right: none;"
+        [class.is-invalid]="email.invalid && email.touched"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Additionalnote"
+        name="additionalnote"
+        [(ngModel)]="userModel.additionalnote"
+        style="border-top: none;border-left: none;border-right: none;"
+      />
+      <button
+        class="btn btn-primary"
+        style="margin-left: 200px; margin-top: 40px;"
+        >
+        submit
+      </button>
+    </div>
+  </form>
+</div>

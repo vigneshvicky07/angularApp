@@ -1,0 +1,12 @@
+.firstproductclass{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.secondproductclass
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+
+  z-index: 2;
+margin-top: -18px;}

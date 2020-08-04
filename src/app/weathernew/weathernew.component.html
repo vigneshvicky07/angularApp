@@ -1,0 +1,60 @@
+<div class="row">
+  <div class ="col-md-6 offset-md-3">
+    <!-- <div *ngif="weather;else waiting" > -->
+    <div class="col-sm-12 text-center">
+      <h5>WEATHER AND FORECaSTS IN THE CITY</h5>
+  <!-- <h2>Weather in {{weather.sys.country}}</h2> -->
+    </div>
+<div class = "input-group mt-5">
+  <input class="form-control" type="text" [ngModel]="userinput.value" #userinput value="{{userinput.value}}" placeholder="Enter City Name">
+  <div class="input-group-append">
+  <button class="input-group-text btn btn-outline-primary" (click)="getcity(userinput.value)">search</button>
+</div>
+</div>
+
+    <div class="col-sm-12">
+      <span class="temp"><img src="./assets/{{weather.weather[0].icon }}.png" alt ="01d.png">
+      {{ weather.main.temp}} &#176; F</span>
+        <p class="text-uppercase font-italic font-weight-bold">{{weather.weather[0].description }}</p>
+    </div>
+
+
+    <table class="table table-light table-striped table-bordered table-sm">
+      <tbody>
+        <tr>
+          <td>hhhumidity</td><td>{{ weather.main.humidity }} %</td>
+        </tr>
+        <tr>
+          <td>pressure</td><td>{{ weather.main.pressure }} hpa</td>
+        </tr>
+
+        <tr>
+          <td>sunrise</td><td>{{ weather.sys.sunrise*1000 | date:'H:mm' }} </td>
+        </tr>
+
+        <tr>
+          <td>sunset</td><td>{{ weather.sys.sunset*1000 | date:'H:mm' }} </td>
+        </tr>
+
+
+        <tr>
+          <td>geo cords</td><td>{{ weather.coord.lat}},{{ weather.coord.lon}}  </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <button (click)="generatepdf()">generatepdf</button>
+<div class="map">
+
+<!-- (console.log()) -->
+  <agm-map [latitude] ="lat" [longitude] = "lon" [mapTypeId]="maptype"></agm-map>
+
+</div>
+    <!-- <agm-marker [latitude] = "lat" [longitude]="lon"></agm-marker> -->
+  </div>
+<!-- <ng-template #waiting></ng-template> -->
+
+<!-- </div> -->
+
+</div>

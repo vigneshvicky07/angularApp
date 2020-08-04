@@ -1,0 +1,15 @@
+
+.map {
+  width: 100%;
+  min-height: 50vh;
+  height: 0;
+  color: black;
+  display: block;
+  position: relative;
+}
+
+ .agm-map {
+      height: 600px;
+      width: 100%;
+  }
+

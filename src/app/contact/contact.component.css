@@ -1,0 +1,33 @@
+.contactmain
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.client-cnt
+{
+  position: relative;
+    top: 44%;
+    left: 0;
+    display: inline-block;
+    background: #332e43;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.77;
+    color: #ffffff;
+    height: 77px;
+    width: 185px;
+    padding: 17px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.contactmainright
+{
+  position: relative;
+    text-align: center!important;
+    height: 100%;
+    background: url(/assets/codingmart-sprite-bk1.png) no-repeat;
+    background-position: -661px -1019px;
+    background-size: 2386px 1725px;
+    margin-top: 100px;
+
+}

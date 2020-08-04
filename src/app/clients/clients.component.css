@@ -1,0 +1,78 @@
+.col1row1
+{
+  padding:119px;
+  border: 1px solid #d9d9d9;
+  /* webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out; */
+      filter: grayscale(100%);
+    }
+    .col1row1:hover{
+      filter: grayscale(0%);
+
+    }
+
+
+
+    .col1row2
+{
+  padding:119px;
+  border: 1px solid #d9d9d9;
+  /* webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out; */
+      filter: grayscale(100%);
+    }
+    .col1row2:hover{
+      filter: grayscale(0%);
+
+    }
+
+
+    .col2row1
+{
+  padding:119px;
+  border: 1px solid #d9d9d9;
+  /* webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out; */
+      filter: grayscale(100%);
+    }
+    .col2row1:hover{
+      filter: grayscale(0%);
+
+    }
+
+
+
+
+    .col2row2
+    {
+      padding:119px;
+      border: 1px solid #d9d9d9;
+      /* webkit-filter: grayscale(100%);
+      -webkit-transition: .5s ease-in-out; */
+          filter: grayscale(100%);
+        }
+        .col2row2:hover{
+          filter: grayscale(0%);
+          /* content:"hai"; */
+
+        }
+
+
+
+      .clients-ctn{
+     position: relative;
+    top: 44%;
+    left: 0;
+    display: inline-block;
+    background: #332e43;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.77;
+    color: #ffffff;
+    height: 77px;
+    width: 185px;
+    padding: 17px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 150px;
+        }

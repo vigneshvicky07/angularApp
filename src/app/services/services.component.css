@@ -1,0 +1,42 @@
+.scol1row1
+{
+  /* margin-top:150px ; */
+  /* padding: 44px; */
+  /* opacity : 0.3; */
+  /* visibility: hidden; */
+
+
+
+  padding: 14px;
+  text-align: center;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  height: 200px;
+box-sizing: border-box;
+width :350px
+}
+.mobileappslogo{
+  opacity: 0.3;
+  margin-top: 40px;
+  /* text-align: center; */
+}
+.mobileapps-content{
+  visibility: hidden;
+}
+
+.scol1row1:hover .mobileapps-content{
+
+  visibility: visible;
+  /* background-color: lightseagreen; */
+}
+.scol1row1:hover{
+  background-color: #89EEF9;
+
+
+}
+.scol1row1:hover .mobileappslogo{
+  visibility: hidden;
+  z-index: 100;
+  text-align: center;
+}
